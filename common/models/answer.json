@@ -1,0 +1,32 @@
+{
+  "name": "answer",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "container": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "soal": {
+      "type": "belongsTo",
+      "model": "Soal",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

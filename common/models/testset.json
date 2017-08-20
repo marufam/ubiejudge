@@ -1,0 +1,44 @@
+{
+  "name": "testset",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "answerName": {
+      "type": "string"
+    },
+    "answerType": {
+      "type": "string"
+    },
+    "answerContainer": {
+      "type": "string"
+    },
+    "answerUrl": {
+      "type": "string"
+    },
+    "testName": {
+      "type": "string"
+    },
+    "testType": {
+      "type": "string"
+    },
+    "testContainer": {
+      "type": "string"
+    },
+    "testUrl": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "soal": {
+      "type": "belongsTo",
+      "model": "Soal",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
