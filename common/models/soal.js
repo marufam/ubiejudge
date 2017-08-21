@@ -80,24 +80,6 @@ module.exports = function(Soal) {
                     }
                 });
             }
-            // ,
-            // function(fileObj,r,testname,resultCompile,callback){
-            //     async.map(r.testsets,function(data,callback){
-            //         fs.readFile('files/testset/'+data.answerName, 'utf8', function (err,data) {
-            //             if (err) {
-            //                 callback(error)
-            //             }else{
-            //                 callback(null,data);
-            //             }
-            //           });
-            //     },function(error,result){
-            //         if(error){
-            //             callback(error);
-            //         }else{
-            //             callback(null,result);
-            //         }
-            //     });
-            // }
         ],function(err,res){
             if(err) cb(err);
             cb(null,res);
